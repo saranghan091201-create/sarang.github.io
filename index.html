@@ -100,8 +100,8 @@ input{width:70px;background:#0b1525;border:1px solid #314663;border-radius:8px;c
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 // Supabase 프로젝트를 만든 뒤 아래 두 값을 입력하면 소셜 로그인과 클라우드 저장이 활성화됩니다.
-const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY";
+const SUPABASE_URL = "https://tdkvoptsjzaxrbvostum.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_실제_복사한_키";
 let supabaseClient = null, currentUser = null, cloudReady = false, lastDailyReport = null;
 if (window.supabase && SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("YOUR_") && SUPABASE_ANON_KEY && !SUPABASE_ANON_KEY.includes("YOUR_")) {
   supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
